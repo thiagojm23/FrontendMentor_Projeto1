@@ -1,10 +1,20 @@
-const input = document.querySelector(".email input");
-if (input) {
-  const isso = input.value;
-  console.log(isso);
-  if (isso.includes("@")) {
-    const usuario = isso.substring(0, isso.indexOf("@"));
+const email = document.querySelector(".email input");
+email.addEventListener("input", () => {
+  if (email) {
+    const isso = email.value;
+    console.log(isso.length);
+    if (isso.includes("@")) {
+      const usuario = isso.substring(0, isso.indexOf("@"));
+      console.log(usuario.length);
+      const endereco = isso.substring(isso.indexOf("@") + 1, isso.length);
+      console.log(endereco);
+      if (isso.indexOf(" ") == -1) {
+      }
+    } else {
+      email.classList.add("email__incorreto");
+      console.log("banana");
+    }
   }
-}
-string = "meuNomeÉThiago";
-console.log(string.substring(1, 4));
+});
+/*string = "meuNomeÉThiago";
+console.log(string.substring(1, 4));*/
