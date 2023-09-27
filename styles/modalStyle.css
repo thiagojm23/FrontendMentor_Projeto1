@@ -1,0 +1,52 @@
+:root {
+  --cor-texto: #010f33;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-texto);
+}
+.modal__conteudo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 65px;
+  padding-top: 25px;
+  background-color: #fefefe;
+  margin: 8% auto;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 25%;
+}
+.modal__conteudo img {
+  width: 60px;
+}
+.modal__conteudo h1 {
+  font-size: 50px;
+  color: var(--cor-texto);
+  width: 80%;
+  margin-top: 20px;
+}
+.modal__conteudo p {
+  width: 80%;
+  line-height: 25px;
+}
+.modal__conteudo button {
+  width: 80%;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: transparent;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    hsl(327, 81%, 62%) 0%,
+    hsl(4, 100%, 67%) 100%
+  );
+}

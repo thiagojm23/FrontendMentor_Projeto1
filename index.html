@@ -1,69 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="main.js" defer></script>
-
-    <title>Newsletter</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <main class="conteudo">
-      <section class="conteudo__principal">
-        <h1>Stay Updated!</h1>
-        <p>Join 60.000+ product managers receriving monthly updates on:</p>
-        <div class="lista-de-vantagens">
-          <span
-            ><img
-              src="assets/images/icon-list.svg"
-              alt="icone de lista"
-            />Product discovery and building what matters</span
-          >
-          <span
-            ><img
-              src="assets/images/icon-list.svg"
-              alt="icone de lista"
-            />Measuring ti ensure updates are a success</span
-          >
-          <span
-            ><img src="assets/images/icon-list.svg" alt="icone de lista" />And
-            much more!</span
-          >
-        </div>
-        <div class="email">
-          <label>Email address</label>
-          <input type="email" placeholder="email@company.com" />
-        </div>
-        <button class="botao-inscrever">Subscribe to monthly newsletter</button>
-      </section>
-      <img
-        class="grafico"
-        src="assets/images/illustration-sign-up-desktop.svg"
-        alt="grafico"
-      />
-    </main>
-    <!--<div class="attribution">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/modalStyle.css">
+  <script src="main.js" defer></script>
+  <script src="modal.js" defer></script>
+  
+  <title>Newsletter</title>
+</head>
+<body>
+  <main class="conteudo">
+    <section class="conteudo__principal">
+      <h1>Stay Updated!</h1>
+      <p>Join 60.000+ product managers receriving monthly updates on:</p>
+      <div class="lista-de-vantagens">
+        <span><img src="assets/images/icon-list.svg" alt="icone de lista">Product discovery and building what matters</span>
+        <span><img src="assets/images/icon-list.svg" alt="icone de lista">Measuring ti ensure updates are a success</span>
+        <span><img src="assets/images/icon-list.svg" alt="icone de lista">And much more!</span>
+      </div>
+      <div class="email">
+        <p>Email address</p>
+        <p class="verifica-email">E-mail válido</p>
+        <input type="email" placeholder="email@company.com">
+      </div>
+      <button class="botao-inscrever">Subscribe to monthly newsletter</button>
+    </section>
+    <div class="modal">
+      <div class="modal__conteudo">
+        <span><img src="assets/images/icon-success.svg" alt="checkpoint"></span>
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation has been sent to <strong>exemplo@email.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+        <button>Dismiss message</button>
+      </div>
+    </div>
+    <img class="grafico" src="assets/images/illustration-sign-up-desktop.svg" alt="grafico">
+  </main>
+  <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  </body>
+</body>
 </html>
