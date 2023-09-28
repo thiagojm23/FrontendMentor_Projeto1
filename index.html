@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/modalStyle.css">
   <script src="main.js" defer></script>
@@ -14,6 +13,9 @@
   <title>Newsletter</title>
 </head>
 <body>
+  <header>
+
+  </header>
   <main class="conteudo">
     <section class="conteudo__principal">
       <h1>Stay Updated!</h1>
@@ -26,23 +28,30 @@
       <div class="email">
         <p>Email address</p>
         <p class="verifica-email">E-mail válido</p>
-        <input type="email" placeholder="email@company.com">
+        <input id="meuInput" type="email" placeholder="email@company.com">
       </div>
       <button class="botao-inscrever">Subscribe to monthly newsletter</button>
     </section>
     <div class="modal">
       <div class="modal__conteudo">
-        <span><img src="assets/images/icon-success.svg" alt="checkpoint"></span>
-        <h1>Thanks for subscribing!</h1>
-        <p>A confirmation has been sent to <strong>exemplo@email.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
-        <button>Dismiss message</button>
+        <div class="modal__conteudo__principal">
+          <span><img src="assets/images/icon-success.svg" alt="checkpoint"></span>
+          <h1>Thanks for subscribing!</h1>
+          <p>A confirmation has been sent to <strong>exemplo@email.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+          <button>Dismiss message</button>
+        </div>
       </div>
     </div>
+    <div class="imagem">
     <img class="grafico" src="assets/images/illustration-sign-up-desktop.svg" alt="grafico">
+  </div>
   </main>
   <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <footer>
+
+  </footer>
 </body>
 </html>

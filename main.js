@@ -50,12 +50,17 @@ class Verificacao {
   }
 }
 const email = document.querySelector(".email input");
-
 const verificacao = new Verificacao();
+window.timeoutId = null;
 
 email.addEventListener("input", () => {
   verificacao.verificaEmail();
   console.log(verificacao.verificaEmail());
+  console.log(window.timeoutId);
+  if (window.timeoutId != null) {
+    const verificaEmail = document.querySelector(".verifica-email");
+    verificaEmail.classList.remove("ativado");
+  }
 });
 /*string = "meuNomeÉThiago";
 console.log(string.substring(1, 4));*/

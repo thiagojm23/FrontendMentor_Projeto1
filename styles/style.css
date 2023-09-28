@@ -9,28 +9,25 @@
 }
 body {
   box-sizing: border-box;
+  margin: 4.5% 20% 0% 20%;
   font-family: "Roboto", sans-serif;
   background-color: #010f33;
 }
 .conteudo {
   display: flex;
-  gap: 30px;
-  width: 70%;
-  margin: 4% 0% 0% 15%;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
   background-color: white;
-  justify-content: center;
-  border: 2px solid #000;
+  gap: 50px;
 }
 .conteudo__principal {
   display: flex;
-  padding-top: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-top: 6%;
   flex-direction: column;
-}
-.conteudo__principal p {
-  width: 90%;
 }
 .conteudo__principal h1 {
   font-size: 50px;
@@ -39,8 +36,12 @@ body {
   color: var(--cor-texto);
 }
 .grafico {
-  height: 550px;
   max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.imagem {
+  padding-right: 3%;
 }
 .lista-de-vantagens {
   display: flex;
@@ -57,12 +58,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
-  width: 350px;
   gap: 6px;
   font-weight: 700;
-}
-.email p {
-  width: 104px;
 }
 .email input {
   border-radius: 10px;
@@ -73,7 +70,6 @@ body {
 }
 .botao-inscrever {
   margin-top: 15px;
-  width: 350px;
   border-radius: 10px;
   padding: 20px;
   background-color: #010f33;
@@ -88,9 +84,31 @@ body {
   color: lightseagreen;
 }
 .verifica-email {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
   opacity: 0;
   font-weight: 400;
+  transition: background-color 1s;
 }
-.teste {
-  color: blue;
+.verifica-email::after {
+  content: "";
+  position: absolute;
+  left: -100%;
+  right: 100%;
+  z-index: -1;
+  display: block;
+  padding: 8px;
+  top: 80%;
+  background: linear-gradient(
+    90deg,
+    hsl(327, 69%, 75%) 5%,
+    hsl(4, 84%, 52%) 100%
+  );
+  transition: all 0.8s;
+}
+.verifica-email.ativado::after {
+  left: 0;
+  right: 0;
+  transition: all 0.8s;
 }
