@@ -6,7 +6,6 @@ botao.addEventListener("click", () => {
   console.log("foi1");
   if (verificar.verificaEmail()) {
     modal.style.display = "flex";
-    console.log("foi2");
   } else {
     const mensagem = document.querySelector(".verifica-email");
     console.log("Isso aqui ta indo");
