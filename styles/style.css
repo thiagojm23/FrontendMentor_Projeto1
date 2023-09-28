@@ -70,11 +70,18 @@ body {
 }
 .botao-inscrever {
   margin-top: 15px;
+  border: transparent;
   border-radius: 10px;
   padding: 20px;
-  background-color: #010f33;
+  font-family: "Roboto", sans-serif !important;
+  background: linear-gradient(
+    90deg,
+    hsl(327, 81%, 62%) 0%,
+    hsl(4, 100%, 67%) 100%
+  );
   color: white;
   font-weight: 700;
+  font-size: 17px;
   cursor: pointer;
 }
 .email__incorreto {
