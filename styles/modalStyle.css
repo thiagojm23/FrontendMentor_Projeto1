@@ -7,8 +7,8 @@
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--cor-texto);
 }
 .modal__conteudo {
@@ -16,8 +16,9 @@
   flex-direction: column;
   padding-left: 65px;
   padding-top: 25px;
+  padding-bottom: 20px;
   background-color: #fefefe;
-  margin: 8% 36.5% 10% 31.5%;
+  margin: auto 36.5% auto 36.5%;
   border: 1px solid #888;
   border-radius: 25px;
 }
